@@ -7,7 +7,9 @@ https://www.terraform.io/docs/providers/aws/guides/serverless-with-aws-lambda-an
 ## Usage
 
     module "hello_api" {
-      source = "terraform-aws-modules/serverless-api/aws"
+      source = "mlundela/serverless-api/aws"
+      version = "1.0.1"
+      
       name = "hello"
       lambda_artifact_bucket = "my-artifacts-bucket"
       lambda_artifact_key = "lambda/hello-04b2add.zip"
